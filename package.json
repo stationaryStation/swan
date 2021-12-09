@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p .",
-    "watch": "tsc -p . -w"
+    "build:prod": "webpack --mode=production",
+    "build:dev": "webpack --mode=development",
+    "watch": "webpack -w"
   },
   "author": "",
   "license": "ISC",
