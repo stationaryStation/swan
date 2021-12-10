@@ -1,14 +1,35 @@
 import React from 'react';
-import BTN from '../ui/button';
 import './add.css';
 
-function Add() {
-  return(
-    <div>
-      <h1 className="title">Add Event</h1>
-      <BTN type="button-primary" text="Create" />
-    </div>
-  )
+class NameForm extends React.Component<{}, {value: string}> {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label className="input-title">
+          Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" className="button" />
+      </form>
+    );
+  }
 }
 
-export default Add;
+export default NameForm;

@@ -5,12 +5,12 @@ function Nav() {
   return (
   <div>
     <nav>
-    <ul>
+    <ul className="topnav">
         <Link to={"./Add"}>
           <li><a>Add Event</a></li>
         </Link>
         <Link to={"/"}>
-          <li><a>Go Back</a></li>
+          <li><a className="active">Home</a></li>
         </Link>
     </ul>
     </nav>
