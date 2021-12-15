@@ -6,9 +6,9 @@
     <nav>
         <ul>
             <li><a class="active">Home</a></li>
-            <li><a>Events</a></li>
-            <li><a>Team</a></li>
-            <li class="nav-left"><a>Create</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Team</a></li>
+            <li class="nav-left"><a href="#">Create</a></li>
         </ul>
     </nav>
 </div>

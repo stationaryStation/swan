@@ -28,7 +28,7 @@ li {
     text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar a:hover:not(.active) {
     background-color: #b9b9b9;
 }
 
@@ -38,9 +38,7 @@ li {
     font-weight: 500;
 }
 .navbar .active:hover {
-    background-color: #603f8f;
-    color: rgb(255, 255, 255);
-    font-weight: 500; 
+    cursor: default;
 }
 .navbar .nav-left {
     float: right;
