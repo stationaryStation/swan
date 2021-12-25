@@ -22,7 +22,7 @@ supabase.auth.onAuthStateChange((_, session) => {
 <Router url="{url}">
     <div class="content">
         {#if $user}
-            <Dashboard /> 
+            <Profile /> 
         {:else}
             <Login />
         {/if}
