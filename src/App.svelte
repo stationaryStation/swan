@@ -18,7 +18,7 @@ supabase.auth.onAuthStateChange((_, session) => {
 {/if}
 <div class="content">
         {#if $user}
-        <Dashboard /
+        <Dashboard />
         {:else}
         <Login />
         {/if}
