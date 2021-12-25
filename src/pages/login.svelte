@@ -1,5 +1,6 @@
 <script lang=ts>
     import { supabase } from '../supabaseClient.js';
+    import '../styles/main.css'
     let loading = false;
     let email;
     const handleLogin = async () => {
@@ -15,10 +16,13 @@
         }
     }
 </script>
-
-<form class="row flex flex-center" on:submit|preventDefault={handleLogin}>
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+<form class="row flex flex-center container" on:submit|preventDefault={handleLogin}>
     <div class="col-6 form-widget">
-        <h1 class="header">Login</h1>
+        <h3 class="header">Login</h3>
         <p class="description">Sign in via magic link with your email below</p>
         <div>
             <input
@@ -29,7 +33,8 @@
                 />
         </div>
        <div>
-           <input type="submit" class='button block' value={loading ? "loading" : "Send magic link"} disabled={loading} />
+           <input type="submit" class='button block btn' value={loading ? "loading" : "Send magic link"} disabled={loading} />
        </div> 
     </div>
 </form>
+</div>
