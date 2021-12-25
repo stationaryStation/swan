@@ -19,6 +19,7 @@
     
    
 </script>
-
+<svelte:body></svelte:body>
 <h1>Hello, {data.username}!</h1>
 <p>Your favorite color is {data.color}!</p>
+<img src="https://unsplash.com/photos/ZdOW9Qd8mQo/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQwMjc2MTI4&force=true&w=640">

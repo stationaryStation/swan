@@ -6,6 +6,7 @@ import Dashboard from './pages/dashboard.svelte';
 export let url = '';
 </script>
 
+<svelte:body></svelte:body>
 <Nav />
 <Router {url}>
     <div class="content">
@@ -13,3 +14,4 @@ export let url = '';
         <Dashboard />
     </div>
 </Router>
+

@@ -1,26 +1,59 @@
+/* Imports Fonts from Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Khula&family=Raleway:ital,wght@0,900;1,900&family=Roboto+Condensed:ital@0;1&display=swap');
+
+/* Web Config */
+
 :root {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(31, 31, 31);
     color: #cbd5ff; 
     --bg-primary: rgb(65, 65, 65);
-    --accent: rgb(73, 131, 255);
+    --bg-acrylic-primary: rgba(65,65,65,0.5);
+    --accent: rgb(91, 143, 255);
+    --succes-accent: rgb(109, 255, 80);
+}
+
+/* Items */
+
+.title {
+    font-family: 'Raleway';
+}
+
+.subtitle {
+    font-family: 'Roboto Condensed';
+}
+
+.main-text {
+    font-family: 'Khula';
 }
 
 .content {
     display: block;
-    padding-left: 10rem;
+    padding-left: 5rem;
     color: #cbd5ff;
 }
-*{
+
+body::-webkit-scrollbar-track{
+    background: #cccccc;
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(56, 136, 255);
+}*{
     transition: 200ms cubic-bezier(0,0,0.3,1);
 }
+
 .navbar{
-    width: 4rem;
-    height: 98vh;
-    border-radius: 10px;
+    width: 5rem;
+    height: 100vh;
+    border-radius: 0px;
     position: fixed;
-    background-color: var(--bg-primary);
+    background-color: var(--bg-acrylic-primary);
+    backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin-left: -7px;
+    margin-top: -7px;
 }
 
 .navbar-nav{
@@ -33,7 +66,7 @@
 }
 .navbar-header{
     color: white;
-    font-size: 18px;
+    font-size: 25px;
 }
 .nav-link{
     color: white;
@@ -42,16 +75,26 @@
 .nav-icons{
     height: 30px;
     width: 30px;
+    color: white;
+}
+
+.nav-icons:focus{
+    transform: scale(0.5,0.5);
 }
 
 .nav-icons:hover{
-    transform: scale(1.2,1.2);
-    border-radius: 10px;
+    border-radius: 5px;
     color: var(--accent);
+    transform: scale(0.8,0.8);
+    background-color: rgba(85, 85, 85,0.3);
 }
 
 .nav-bottom{
     margin-top: 525px;
+}
+
+.nav-icons-succes{
+    color: var(--succes-accent);
 }
 
 /* Items */
