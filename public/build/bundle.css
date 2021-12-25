@@ -169,10 +169,11 @@ form h3{
 }
 
 .btn{
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.1);
     font-size: 30px;
     font-family: 'Khula';
     border-radius: 7px;
+    color: #fff;
     
 }
 
